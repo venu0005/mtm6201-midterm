@@ -1,0 +1,84 @@
+body {
+    background-color: #ffffff; 
+    color: #333232;
+    font-size: 18px;
+    margin: 0;
+}
+
+header {
+    background-color: #354c62;
+    color: #b7bbbf;
+    text-align: center;
+    padding: 2em;
+    transition: transform 0.4s ease-in-out;                /*  used for the colors, centering and a animation on hover */
+}
+
+header:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 3em;
+    color: #3496d7; 
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #31cf73;
+    margin: 0 2em;
+    font-size: 1.5em;
+     transition: transform 0.4s ease-in-out;                /* used for centering and responsive on hover */
+}
+
+nav a:hover {
+    transform: scale(1.05);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+    transition: transform 0.4s ease-in-out;       /*  used for the section to be responsive */
+}
+
+section:hover {
+    transform: scale(1.05);
+}
+
+ img {                                           /* used so that the images stay in the container and in center */
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+}
+
+footer {
+    background-color: #2d4052; 
+    text-align: center;
+    padding: 1em;
+}
+
+@media (min-width: 600px) {                             /* used for smaller screen sizes */
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
